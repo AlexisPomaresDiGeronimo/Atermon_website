@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+</head>
+<body>
+<div layout:fragment="main-content">
+  <div th:class="container">
+    <div class="row">
+      <div class="col-2">
+      </div>
+      <div class="col-8">
+        <div class="container py-4">
+          <form id="contactForm" action="/uploadCv" method="post">
+            <div>
+              <h1 id="general_title">Apply Your CV!</h1><hr>
+            </div>
+            <div>
+              <input class="form-control" id="cv_firstname" name="cv_firstname" type="text" placeholder="Firstname" />
+            </div>
+            <div>
+              <input class="form-control" id="cv_lastname" name="cv_lastname" type="text" placeholder="Lastname" />
+            </div>
+            <div>
+              <input class="form-control" id="cv_email" name="cv_email" type="text" placeholder="Email"/>
+            </div>
+            <div>
+              <input class="form-control" id="cv_phone" name="cv_phone" type="tel" pattern="[0-9]{10}" placeholder="Phone" />
+            </div>
+            <div>
+              <input class="form-control" id="cv_location" name="cv_location" type="text" placeholder="Location">
+            </div>
+            <div>
+              <input class="form-control" id="cv_birthdate" name="cv_birthdate" type="date" placeholder="Birthdate">
+            </div>
+            <div>
+              <input class="form-control" id="cv_yearsOfExperience" name="cv_yearsOfExperience" type="number" placeholder="Years of Experience">
+            </div>
+            <div>
+              <label id="cv_label" for="cv">Upload your CV:</label>
+              <input class="form-control" id="cv" name="cv" type="file" placeholder="Apply your cv" />
+            </div>
+            <div class="d-grid">
+              <button id="cv_btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

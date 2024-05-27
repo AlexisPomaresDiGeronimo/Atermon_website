@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+</head>
+<body>
+<div layout:fragment="main-content">
+  <div>
+    <div th:class="container">
+      <h1 id="general_title">Job Details</h1><hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" th:each="jobs:${allJobs}">
+              <a th:href="@{'/jobs/' + ${jobs.jobId}}" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="card-body">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 id="job_ttl" th:text="${jobs.jobTitle}"></h5>
+                    <small class="text-muted" id="job_date" th:text="${jobs.jobDate}"></small>
+                  </div>
+                  <small class="card-title" id="job_comp" th:text="${jobs.jobCompany}">Card title</small>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                  <small class="text-muted" id="job_loc" th:text="${jobs.jobLocation}">Last updated 3 mins ago</small><br>
+                  <small id="job_contr" th:text="${jobs.jobContractType}">Card title</small>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                  <small id="job_rmt" th:text="${jobs.jobRemote}">Card title</small>
+                  <p class="card-text" id="job_desc" th:text="${jobs.jobDescription}" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <br>
+          <div class="col-8">
+            <div class="list-group">
+              <div class="list-group-item" aria-current="true">
+                <div class="card-body">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 id="job_title" th:text="${jobById.jobTitle}">JobTitle</h5>
+                    <small class="text-muted" id="job_dt" th:text="${jobById.jobDate}">Date</small>
+                  </div>
+                  <small class="card-title" id="job_cmp" th:text="${jobById.jobCompany}">Company title</small>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                  <small class="text-muted" id="job_lct" th:text="${jobById.jobLocation}">Job Location</small><br>
+                  <small id="job_cnt" th:text="${jobById.jobContractType}">Contract Type</small>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                  <small id="job_rem" th:text="${jobById.jobRemote}">Remote</small><br>
+                  <a th:href="@{/applyCv}"><button id="cv_button">Apply Now!</button></a>
+                  <p class="card-text" id="job_dsc" th:text="${jobById.jobDescription}">Job Description</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

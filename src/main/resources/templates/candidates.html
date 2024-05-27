@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+</head>
+<body>
+<div layout:fragment="main-content">
+  <div>
+    <div th:class="container">
+      <h1 id="general_title">Candidates Jobs</h1><hr>
+      <div class="list-group" th:each="jobs:${jobs}">
+        <a th:href="@{'/jobs/' + ${jobs.jobId}}" class="list-group-item list-group-item-action" aria-current="true">
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 id="job_ttl" th:text="${jobs.jobTitle}"></h5>
+              <small class="text-muted" id="job_date" th:text="${jobs.jobDate}"></small>
+            </div>
+            <small class="card-title" id="job_comp" th:text="${jobs.jobCompany}">Card title</small>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg>
+            <small class="text-muted" id="job_loc" th:text="${jobs.jobLocation}">Last updated 3 mins ago</small><br>
+            <small id="job_contr" th:text="${jobs.jobContractType}">Card title</small>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg>
+            <small id="job_rmt" th:text="${jobs.jobRemote}">Card title</small>
+            <p class="card-text" id="job_desc" th:text="${jobs.jobDescription}" >Description</p>
+          </div>
+        </a>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+</body>
+</html>

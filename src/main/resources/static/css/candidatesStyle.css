@@ -1,0 +1,13 @@
+#job_ttl{
+    color: #a4b13b;
+    font-size: 20px;
+    font-weight: bold;
+}
+#job_comp, #job_loc, svg{
+    color: #055d75;
+    font-size: 16px;
+}
+#job_date, #job_contr, #job_rmt , #job_desc{
+    color: #055d75;
+    font-size: 14px;
+}

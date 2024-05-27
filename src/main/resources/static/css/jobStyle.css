@@ -1,0 +1,28 @@
+#job_title{
+    color: #a4b13b;
+    font-size: 24px;
+    font-weight: bold;
+}
+#job_dt, #job_cmp, #job_lct, #job_cnt, #job_rem{
+    color: #055d75;
+    font-size: 16px;
+}
+#job_dsc{
+    color: #055d75;
+    font-size: 20px;
+}
+#cv_button{
+    width: 20%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #055d75;
+    text-align: center;
+    margin-top: 2%;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+#cv_button:hover {
+    color: #ffffff;
+    background-color: #a4b13b;
+}

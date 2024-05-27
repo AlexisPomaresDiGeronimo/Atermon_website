@@ -1,0 +1,52 @@
+#cv_firstname{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-left: 3%;
+}
+#cv_lastname{
+    float: right;
+    width: 48%;
+    margin: 1%;
+    padding-left: 3%;
+}
+#cv_message, #cv_email, #cv_phone , #cv_location, #cv_birthdate, #cv_yearsOfExperience{
+    margin: 1%;
+    width: 98%;
+    padding-left: 3%;
+}
+#cv::-webkit-file-upload-button {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    background-color: #055d75;
+    border-radius: 5px;
+    padding: 10px ;
+    width: 20%;
+    white-space: nowrap;
+    font-size: 14px;
+}
+#cv{
+    text-align: left;
+    background-color: white;
+    border: transparent;
+    width: 98%;
+    margin: 1%;
+    color: #055d75;
+}
+#cv_label{
+    color: #a4b13b;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#cv_btn{
+    margin: 1%;
+    width: 98%;
+    height:40px;
+    border-radius: 5px;
+    background-color: #a4b13b;
+    color: white;
+}
+#cv_btn:hover{
+    background-color: #055d75;
+}

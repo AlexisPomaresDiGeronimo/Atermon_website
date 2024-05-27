@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title th:text="${title}"></title>
+  <link rel="icon" type="image/x-icon" href="/images/atermon_icon.jpg">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- style css -->
+  <link rel="stylesheet" th:href="@{/css/layoutStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/generalStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/indexStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/candidatesStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/aboutStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/contactStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/jobsStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/cvStyle.css}">
+  <link rel="stylesheet" th:href="@{/css/responsive.css}">
+  <!--JavaScript-->
+  <script th:src="@{/js/jobs.js}"></script>
+</head>
+<body>
+<!--header section start -->
+<div class="header_section">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="logo"><a th:href="@{/index}"><img th:src="@{/images/atermon_logo.jpg}" alt="Atermon"></a></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/index}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/staff}">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/candidates}">Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/about}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/contact}">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<main layout:fragment="main-content">
+</main>
+<!-- footer section start -->
+<div class="footer_section layout_padding">
+  <div class="container">
+    <div class="location_main">
+      <div class="location_text">
+        <img th:src="@{/images/map-icon.png}"><span class="padding_left_10"><a href="#">Brussels, Belgium</a></span><br>
+        <img th:src="@{/images/map-icon.png}"><span class="padding_left_10"><a href="#">Athens, Greece</a></span>
+      </div>
+      <div class="location_text center"><img th:src="@{/images/call-icon.png}"><span class="padding_left_10"><a href="#">Call ; 01 1234567890</a></span></div>
+      <div class="location_text right"><img th:src="@{/images/mail-icon.png}"><span class="padding_left_10"><a href="#">demo@gmail.com</a></span></div>
+    </div>
+    <div class="footer_section_2">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 class="footer_taital">About</h2>
+          <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the majority havThere are many variations of passages of Lorem Ipsum available, but the majority hav</p>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="footer_taital">Services Link</h2>
+          <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the majority havThere are many variations of passages of Lorem Ipsum available, but the majority hav</p>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="footer_taital">Subscribe</h2>
+          <input type="text" class="Enter_text" placeholder="Enter Your Email" name="Enter Your Email">
+          <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+          <div class="social_icon">
+            <ul>
+              <li><a href="https://www.linkedin.com/company/atermon/about/?viewAsMember=true"><img th:src="@{/images/linkedin-icon.png}"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer section end -->
+<!-- copyright section start -->
+<div class="copyright_section">
+  <div class="container">
+    <p class="copyright_text">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-square" viewBox="0 0 16 16">
+        <path d="M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"/>
+      </svg>
+      Atermon | 2023</p>
+  </div>
+</div>
+<!-- copyright section end -->
+<!--libraries-->
+<script th:href="@{/libraries/bootstrap.bundle.min.js}"></script>
+<script th:href="@{/libraries/jquery.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+</head>
+<body>
+<div layout:fragment="main-content">
+  <div th:class="container">
+    <div class="row">
+      <div class="col-2">
+      </div>
+      <div class="col-8">
+        <div class="container py-4">
+          <form id="contactForm" action="/contact_us" method="post">
+            <div>
+              <h1 id="general_title">Contact Us</h1><hr>
+            </div>
+            <div>
+              <input class="form-control" id="firstname" name="firstname" type="text" placeholder="Firstname" />
+            </div>
+            <div>
+              <input class="form-control" id="lastname" name="lastname" type="text" placeholder="Lastname" />
+            </div>
+            <div>
+              <input class="form-control" id="email" name="email" type="text" placeholder="Email"/>
+            </div>
+            <div>
+              <input class="form-control" id="phone" name="phone" type="tel" pattern="[0-9]{10}" placeholder="Phone" />
+            </div>
+            <div>
+              <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 5rem;"></textarea>
+            </div>
+            <div class="d-grid">
+              <button id="contact_btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

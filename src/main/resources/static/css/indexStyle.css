@@ -1,0 +1,146 @@
+/*<--------------------------------- banner section start --------------------------------->*/
+.banner_main {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 44%;
+    float: left;
+    background: #fff;
+    padding: 40px;
+}
+
+.banner_taital {
+    width: 100%;
+    float: left;
+    font-size: 48px;
+    color: #055d75;
+    font-weight: bold;
+}
+.banner_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #055d75;
+    margin: 0px;
+}
+.btn_main {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+}
+.contact_bt {
+    width: 170px;
+    float: left;
+}
+.contact_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #a4b13b;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+}
+.contact_bt a:hover {
+    color: #ffffff;
+    background-color: #055d75;
+}
+.readmore_bt {
+    width: 170px;
+    float: left;
+    margin-left: 20px;
+}
+.readmore_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #055d75;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+}
+.readmore_bt a:hover {
+    color: #ffffff;
+    background-color:#a4b13b;
+}
+/*<--------------------------------- banner section end --------------------------------->*/
+/*<--------------------------------- about section start --------------------------------->*/
+.about_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+.about_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.about_image {
+    width: 100%;
+    float: left;
+    padding-left: 22px;
+    padding-top: 37px;
+}
+.about_taital {
+    width: 35%;
+    float: left;
+    font-size: 40px;
+    color: #055d75;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.about_taital::after {
+    content: '';
+    position: absolute;
+    width: 193px;
+    height: 2px;
+    background-color: #055d75;
+    left: initial;
+    right: 0px;
+    top: 44%;
+    z-index: -1;
+}
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #055d75;
+    margin: 0px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #055d75;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.about_taital_main {
+    width: 100%;
+    float: left;
+    padding-top: 130px;
+}
+.read_bt {
+    width: 170px;
+    float: right;
+    padding-top: 64px;
+}
+.read_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #055d75;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.read_bt a:hover {
+    color: #ffffff;
+    background-color: #a4b13b;
+}
+/*<--------------------------------- about section end --------------------------------->*/

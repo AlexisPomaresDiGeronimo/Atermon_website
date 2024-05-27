@@ -1,0 +1,41 @@
+#general_title {
+    width: 35%;
+    font-size: 40px;
+    color: #055d75;
+}
+hr{
+    color: #055d75;
+    opacity: 100%;
+    margin-top: 0%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    #contact_title {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #contact_title {     width: 55%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    #contact_title {
+        width: 60%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .form-control{
+        text-align: center;
+    }
+    #contact_title{
+        width: 100%;
+        font-size: 25px;
+    }
+    #firstname, #lastname{
+        float: none;
+        width: 98%;
+    }
+    #message{
+        height: 20px;
+    }
+}

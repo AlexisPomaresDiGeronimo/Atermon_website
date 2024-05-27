@@ -1,0 +1,43 @@
+#firstname{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-left: 3%;
+}
+#lastname{
+    float: right;
+    width: 48%;
+    margin: 1%;
+    padding-left: 3%;
+}
+#message, #email, #phone{
+    margin: 1%;
+    width: 98%;
+    padding-left: 3%;
+}
+#contact_btn{
+    margin: 1%;
+    width: 98%;
+    height:40px;
+    border-radius: 5px;
+    background-color: #a4b13b;
+    color: white;
+}
+#contact_btn:hover{
+    background-color: #055d75;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){  }
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 576px) and (max-width: 767px) {  }
+@media (max-width: 575px) {
+    .form-control{
+        text-align: center;
+    }
+    #firstname, #lastname{
+        float: none;
+        width: 98%;
+    }
+    #message{
+        height: 20px;
+    }
+}

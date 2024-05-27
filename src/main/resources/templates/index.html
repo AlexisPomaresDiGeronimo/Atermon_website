@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+</head>
+<body>
+<div layout:fragment="main-content">
+  <!--banner section start -->
+  <div id="index_cnt">
+    <div th:class="container">
+      <div class="banner_main">
+        <h1 class="banner_taital">Staffing Agency</h1>
+        <p class="banner_text">Find your staff, create your future</p>
+        <div class="btn_main">
+          <div class="contact_bt "><a th:href="@{/staff}">Find Staff?</a></div>
+          <div class="readmore_bt"><a th:href="@{/candidates}">Find Job?</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--banner section end -->
+  <!--about section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      <h1 id="general_title">About Us</h1><hr>
+      <div class="about_section_2">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about_image"><img th:src="@{/images/about-img.png}"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_taital_main">
+              <p class="lorem_text">Atermon is a software engineering company based in Brussels - Belgium and specialized in both tailor made Software Development and on-site IT consultancy. Atermon helps its clients with flexible and user-friendly software solutions adapted to the evolving needs of clients looking to optimize their business performances. We have developed core competencies in Software Engineering implementing, on an iterative way, business critical solutions on time and within budgets.</p>
+              <div class="read_bt"><a th:href="@{/about}">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--about section end -->
+</div>
+</body>
+</html>
