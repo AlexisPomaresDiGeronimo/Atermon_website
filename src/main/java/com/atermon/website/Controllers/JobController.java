@@ -21,6 +21,6 @@ public class JobController {
         model.addAttribute("allJobs", allJobs);
         Job job = jobsRepo.getJobsByJobId(jobId);
         model.addAttribute("jobById", job);
-        return "jobs";
+        return "job";
     }
 }
