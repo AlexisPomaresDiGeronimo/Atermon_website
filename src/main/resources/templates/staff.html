@@ -8,6 +8,16 @@
   <div>
     <div th:class="container">
       <h1 id="general_title">Staff</h1><hr>
+      <div class="list-group" th:each="candidates:${allCandidates}">
+          <div id="can_card" class="card-body">
+            <h2 id="can_fstnm" th:text="${candidates.firstname} + ' ' + ${candidates.lastname}"></h2>
+            <p class="card-title" id="can_email" th:text="${candidates.email}">Candidate Email</p>
+            <p id="can_bir" th:text="'Birthday: ' + ${candidates.birthday} + ' (' + ${candidates.age} + ')'">Candidate Birthday</p>
+            <p id="can_phone" th:text="'Phone: ' + ${candidates.phone}">Candidate Phone</p>
+            <p class="card-text" id="can_years" th:text="'Years Of Experience: ' + ${candidates.yearsOfExperience}">Candidates Years of experience</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>

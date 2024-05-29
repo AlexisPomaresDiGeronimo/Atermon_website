@@ -1,0 +1,20 @@
+#can_fstnm{
+    color: #a4b13b;
+    font-size: 20px;
+    font-weight: bold;
+}
+#can_email, #can_age, can_bir{
+    color: #055d75;
+    font-size: 16px;
+}
+#can_phone, #can_years{
+    color: #055d75;
+    font-size: 14px;
+}
+#can_card{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    outline: none !important;
+}
