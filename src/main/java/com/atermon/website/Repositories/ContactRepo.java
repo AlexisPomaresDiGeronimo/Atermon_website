@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ContactRepo extends JpaRepository<ContactSender, Long> {
+    ContactSender getContactSenderByContactUsId(Long contactUsId);
 }

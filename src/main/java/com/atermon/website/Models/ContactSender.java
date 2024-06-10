@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
-public class ContactSender {
+public class ContactSender{
     @Id
     @GeneratedValue(generator="contactUs_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name="contactUs_seq", sequenceName = "contactUs_seq", allocationSize = 1)

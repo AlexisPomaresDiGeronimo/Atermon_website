@@ -4,14 +4,16 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 
-@Entity @Data @AllArgsConstructor @NoArgsConstructor
-public class Candidate{
+@Entity @AllArgsConstructor @NoArgsConstructor
+@Data
+public class Staff{
     @Id
-    @GeneratedValue(generator="candidates_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name="candidates_seq", sequenceName = "candidates_seq", allocationSize = 1)
-    public Long candidateId;
+    @GeneratedValue(generator="staff_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name="staff_seq", sequenceName = "staff_seq", allocationSize = 1)
+    private Long staffId;
     public String firstname;
     public String lastname;
     public String email;

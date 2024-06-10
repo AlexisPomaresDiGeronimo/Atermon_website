@@ -1,7 +1,6 @@
 package com.atermon.website.Controllers;
 
 import com.atermon.website.Models.Candidate;
-import com.atermon.website.Models.Job;
 import com.atermon.website.Repositories.CandidateRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

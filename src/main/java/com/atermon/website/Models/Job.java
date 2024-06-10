@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @Entity @Data @AllArgsConstructor @NoArgsConstructor
-public class Job {
+public class Job{
     @Id
     @GeneratedValue(generator="jobs_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name="jobs_seq", sequenceName = "jobs_seq", allocationSize = 1)
