@@ -24,15 +24,17 @@ public class SecurityConfiguration {
         http.authorizeHttpRequests(
                 (requests) -> requests
                         .requestMatchers("/", "/css/**", "/images/**"
-                                        , "/layouts/**","/login","/candidates","/jobs/**", "/staff" ,"/contact", "/about").permitAll()
+                                        , "/layouts/**","/login","/signup","/register"
+                                ,"/registration","/candidates","/jobs/**"
+                                ,"/staff","/contact", "/about").permitAll()
                         .requestMatchers("/applyCv").hasAnyRole("USER","ADMIN")
                         .requestMatchers("/admin").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .formLogin(
                         formLogin -> formLogin
-                                .loginPage("/login")  // Custom login page
-                                .permitAll()
+                                .loginPage("/login").permitAll()
+                                .defaultSuccessUrl("/applyCv" ,true)// Custom login page
                 )
                 .logout(
                         logout -> logout

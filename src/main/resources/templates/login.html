@@ -1,11 +1,33 @@
 <!DOCTYPE html>
         <html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorate="~{layouts/layout}">
+                layout:decorate="~{layouts/layout}">
         <head>
         </head>
         <body>
-        <div layout:fragment="main-content">
-            <input placeholder="username">
+        <div layout:fragment="main-content" id="cont" class="container">
+                <div class="row">
+                        <div class="col-3"></div>
+                        <div class="frm col-6 rounded">
+                                <form class="form-signin" method="POST" th:action="@{/login}">
+                                        <h1 id="for_h1" class="form-signin-heading">Sign in</h1>
+                                        <div th:if="${param.error}">
+                                                <p id="msg">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
+                                        </div>
+                                        <p>
+                                                <input type="text" id="username" name="username" class="form-control rounded" required>
+                                                <label id="lbl_1" for="username">Username</label>
+                                        </p>
+                                        <p>
+                                                <input type="password" id="password" name="password" class="form-control rounded" required>
+                                                <label id="lbl_2" for="password">Password</label>
+                                        </p>
+                                        <button class="rounded" type="submit">Sign in</button>
+                                        <p id="p">
+                                                Haven't an account? <a href="/register">Create Account!</a>
+                                        </p>
+                                </form>
+                        </div>
+                </div>
         </div>
         </body>
 </html>

@@ -1,0 +1,50 @@
+#cont{
+    margin-top:3%;
+    height: 50%;
+}
+.frm{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:2%;
+    margin-bottom:5%;
+}
+#for_h1{
+    text-align: center;
+    margin-top:5%;
+    color: #055d75;
+}
+#msg{
+    color: red;
+    text-align: center;
+}
+input{
+    width: 100%;
+}
+button{
+    width: 100%;
+    background-color: #055d75 ;
+    color:white;
+    border: transparent;
+    height: 40px;
+}
+button:hover{
+    background-color: #a4b13b;
+}
+#p{
+    margin-top: 5%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #a4b13b; /* atermon green*/
+}
+a:hover{
+    color: #055d75; /* atermon blue*/
+    text-decoration: none;
+}
+fnc , fn2{
+    color: #520dc2;
+}
+#lbl_1 , #lbl_2 , #lbl_3{
+    color: #a4b13b;
+}
