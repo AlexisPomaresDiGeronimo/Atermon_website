@@ -1,25 +1,32 @@
 package com.atermon.website.Controllers;
 
 import com.atermon.website.Models.Candidate;
+import com.atermon.website.Models.User;
 import com.atermon.website.Repositories.CandidateRepo;
+import com.atermon.website.Repositories.UserRepo;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.security.Principal;
 import java.time.LocalDate;
 
 @Controller
 @AllArgsConstructor
 public class CvController {
     CandidateRepo candidatesRepo;
-
+    UserRepo userRepo;
     @GetMapping("/applyCv")
-    public String applyCv(Model model) {
+    public String applyCv(Principal principal,Model model) {
         model.addAttribute("title", "Atermon | Apply CV");
+        model.addAttribute("username", principal.getName());
         return "applyCv";
     }
     @GetMapping("/downloadCv/{id}")

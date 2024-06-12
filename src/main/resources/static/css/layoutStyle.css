@@ -161,6 +161,61 @@ button {
     padding-top: 90px;
     padding-bottom: 0px;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Dropdown Button */
+.dropbtn {
+    padding:10px;
+    margin-right:20px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 80px;
+  height:70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-align:center;
+  color: #a4b13b; /* green */
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color:#055d75; /* blue */
+    color:white;
+}
+#lgt_btn{
+  text-align:center;
+  color: white; /* green */
+  background-color:#a4b13b;
+}
+#lgt_btn:hover {
+    background-color:#055d75; /* blue */
+    color:white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #a4b13b;}
+
+
 /*<--------------------------------- header section start --------------------------------->*/
 #index_cnt {
     width: 100%;
